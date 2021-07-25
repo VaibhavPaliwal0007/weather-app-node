@@ -12,26 +12,18 @@
      <div class="main-content">
         {{>header}}
 
+        <p>Use this site to get your weather!!</p>
+
         <form>
-            <input placeholder="Location" value = ''>
-            <button>
-                <i class="fas fa-search"></i>
-            </button>
+            <input placeholder = "Location">
+            <button>Search</button>
         </form>
 
-        <p id="locationMsg"></p>
-        <div id="weatherMsg">
-            <p id="description"></p>
-            <img src="https://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0001_sunny.png" alt="weather icon" id="weatherImg" width="80" height="80"> 
-            <p id="temperature"></p>
-            <p id="feelsLike"></p>
-            <p id="precipitation"></p>
-            <p id="humidity"></p>
-            <p id="visibility"></p>
-        </div>
+        <p id="message-1"></p>
+        <p id="message-2"></p>
     </div>
 
-    {{>footer}}
+      {{>footer}}
 
     <script src="/js/app.js"></script>
 </body>

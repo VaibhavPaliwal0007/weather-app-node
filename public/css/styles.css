@@ -52,30 +52,4 @@ button {
     background: #888888;
     color: white;
     padding: 8px;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    margin-left: 20px;
-    font-size: 32px;
-}
-
-
-#locationMsg {
-    padding: 3%;
-    font-size: 24px;
-}
-
-#weatherMsg {
-    display: none;
-    background-color: #96B5E5;
-    border-radius: 20px;
-    padding: 30px;
-    padding-top: 0.5px;
-    max-width: 320px;
-    color: #053742;
-    font-size: 22px;
-}
-
-#description {
-    font-size: 32px;
 }

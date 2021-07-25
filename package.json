@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/app.js",
-    "dev": "nodemon src/app.js -e hbs,js"
+    "start" : "node src/app.js"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +13,6 @@
     "chalk": "^4.1.1",
     "express": "^4.16.4",
     "hbs": "^4.0.1",
-    "nodemon": "^2.0.12",
     "postman-request": "^2.88.1-postman.30"
   }
 }

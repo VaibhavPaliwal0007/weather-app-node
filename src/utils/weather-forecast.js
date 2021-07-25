@@ -12,8 +12,18 @@ const forecast = (latitude,longitude,callback) => {
              callback('Unable to find location', undefined)
          }
          else{
-             callback(undefined, 'The current temperature is ' + body.current.temperature + ' and it feels like ' + 
-             body.current.weather_descriptions)
+            callback(undefined, {
+                temperature: body.current.temperature,
+                precipitation: body.current.precip,
+                feelsLike: body.current.feelslike,
+                description: body.current.weather_descriptions[0],
+                humidity: body.current.humidity,
+                visibility: body.current.visibility,
+                weatherImg: body.current.weather_icons[0],
+
+                localTime: body.location.localtime,
+                location: `${body.location.name}, ${body.location.region}, ${body.location.country}`
+            });
          }
     })
 } 
